@@ -7,7 +7,7 @@
           output="screen">
         <remap from="/turtle1/pose" to="$(arg turtle1_name)/pose"/>
     </node>
-    <node pkg="square_pkg"
+    <node pkg="follower_pkg"
           type="spawner.py"
           name="spawner"
           output="screen">
@@ -18,7 +18,7 @@
           name="control_node"
           output="screen"
     />
-    <node pkg="square_pkg"
+    <node pkg="follower_pkg"
           type="follower.py"
           name="listener"
           output="screen">
